@@ -116,7 +116,7 @@ with open(file_path, 'w') as file:
     file.write("\n")
     file.write("Greatest Increase in Profits: " + inc_month + " ($" + str(large_inc_val) + ")\n")
     file.write("\n")
-    file.write("Greatest Decrease in Profits: " + dec_month + " ($-" + str(large_dec_val) + ")\n")
+    file.write("Greatest Decrease in Profits: " + dec_month + " ($" + str(large_dec_val) + ")\n")
 
 # Print same info from text file in terminal
 print("Financial Analysis")
