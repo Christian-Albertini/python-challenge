@@ -40,9 +40,9 @@ def find_dec(lst):
     # Loop through list
     for i in range(1, len(lst)):
         # Set decrease to be the difference between i-1 and i
-        decrease = int(lst[i-1]) - int(lst[i])
+        decrease = int(lst[i]) - int(lst[i-1])
         # Check to see if decrease is greater than max decrease
-        if decrease > max_decrease:
+        if decrease < max_decrease:
             # If so, max decrease becomes decrease and set month to be the i
             max_decrease = decrease
             month_num = i
@@ -131,4 +131,4 @@ print("Average Change: $" + str(change))
 print("")
 print("Greatest Increase in Profits: " + inc_month + " ($" + str(large_inc_val) + ")")
 print("")
-print("Greatest Decrease in Profits: " + dec_month + " ($-" + str(large_dec_val) + ")")
+print("Greatest Decrease in Profits: " + dec_month + " ($" + str(large_dec_val) + ")")
