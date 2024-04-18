@@ -39,9 +39,9 @@ def find_dec(lst):
     month_num = 0
     # Loop through list
     for i in range(1, len(lst)):
-        # Set decrease to be the difference between i-1 and i
+        # Set decrease to be the difference between i and i-1
         decrease = int(lst[i]) - int(lst[i-1])
-        # Check to see if decrease is greater than max decrease
+        # Check to see if decrease is less than max decrease
         if decrease < max_decrease:
             # If so, max decrease becomes decrease and set month to be the i
             max_decrease = decrease
